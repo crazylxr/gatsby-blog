@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `桃园`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `桃翁`,
+      summary: ``,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `一个前端工程师，工作中杭州蚂蚁金服体验技术部，网名一般用「桃翁」，有一个公众号「前端桃园」，欢迎关注。`,
+    siteUrl: `https://www.taoweng.site/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `Tao_Weng`,
+      github: `crazylxr`
     },
   },
   plugins: [
@@ -20,6 +21,7 @@ module.exports = {
         name: `blog`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
