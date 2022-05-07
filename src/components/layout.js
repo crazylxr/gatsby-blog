@@ -166,7 +166,7 @@ const Layout = ({ children, header = true }) => {
               style={{ marginRight: 30 }}
               layout="fixed"
               formats={["auto", "webp", "avif"]}
-              src="../../images/profile.png"
+              src="../images/profile.png"
               width={50}
               height={50}
               quality={95}
