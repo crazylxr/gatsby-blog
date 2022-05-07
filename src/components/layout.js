@@ -3,11 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-interface Props {
-  header?: boolean
-  children: React.ReactNode
-}
-
 export const color_meta = "#666"
 export const color_border = "#666"
    
@@ -133,7 +128,7 @@ const Title = styled(H1)`
   line-height: 2rem;
 `
 
-const Layout = ({ children, header = true }: Props) => {
+const Layout = ({ children, header = true }) => {
   const data = useStaticQuery(
     graphql`
       query {
