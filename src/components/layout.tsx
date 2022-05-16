@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 export const color_meta = "#666"
 export const color_border = "#666"
-   
+
 export const Content = styled.div`
   max-width: 48rem;
   margin-right: auto;
