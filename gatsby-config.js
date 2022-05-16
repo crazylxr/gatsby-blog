@@ -5,7 +5,7 @@ module.exports = {
       name: `桃翁`,
       summary: ``,
     },
-    description: `一个前端工程师，工作中杭州蚂蚁金服体验技术部，网名一般用「桃翁」，有一个公众号「前端桃园」，欢迎关注。`,
+    description: `一个前端工程师，工作在杭州蚂蚁金服体验技术部，网名一般用「桃翁」，有一个公众号「前端桃园」，欢迎关注。`,
     siteUrl: `https://www.taoweng.site/`,
     social: {
       twitter: `Tao_Weng`,

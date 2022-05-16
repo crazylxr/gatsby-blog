@@ -127,8 +127,12 @@ const Title = styled(H1)`
   font-weight: 700;
   line-height: 2rem;
 `
+type Props = {
+  children: React.ReactNode
+  header?: boolean
+}
 
-const Layout = ({ children, header = true }) => {
+const Layout = ({ children, header = true }: Props) => {
   const data = useStaticQuery(
     graphql`
       query {
