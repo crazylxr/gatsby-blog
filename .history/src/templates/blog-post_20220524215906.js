@@ -60,7 +60,6 @@ const BlogPostTemplate = ({ data }) => {
           </li>
         </ul>
       </nav>
-      <Valine></Valine>
     </Layout>
   )
 }

@@ -140,18 +140,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-valine`,
       options: {
-        appId: `JwWqrybFMri5mk9BkL9aA8sS-9Nh9j0Va`,
-        appKey: `BWuJdHjQceAHR8HW17vf0Czm`,
+        appId: `LEANCLOUD_APP_ID`,
+        appKey: `LEANCLOUD_APP_KEY`,
         avatar: `robohash`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
