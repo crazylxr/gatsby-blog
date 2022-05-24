@@ -4,41 +4,23 @@ import Layout from "../components/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { dateFormat } from "../utils/formmat"
-import { H2, H1 } from "../styles"
+import { H2, H1, PostItem } from "../styles"
 import styled from "styled-components"
+import type { Markdown } from "../types/markdown"
+import type { Site } from "../types/site"
 
-export const color_meta = "#666"
-export const color_border = "#666"
+type Props = {
+  data: {
+    site: Site
+    allMarkdownRemark: Markdown
+  }
+}
 
 export const PostList = styled.ul`
   padding: 0;
 `
 
-export const PostItem = styled.li`
-  margin-bottom: 1rem;
-  margin-left: 0;
-  list-style-type: none;
-
-  .meta {
-    display: block;
-    margin-right: 16px;
-    min-width: 100px;
-    color: ${color_meta};
-    font-size: 1rem;
-  }
-
-  @media (min-width: 480px) {
-    display: flex;
-    margin-bottom: 5px;
-
-    .meta {
-      text-align: left;
-    }
-  }
-`
-
-
-export default function Index({ data, location }) {
+export default function Index({ data }: Props) {
   const description = data.site.siteMetadata?.description || "de"
   const posts = dateFormat(data.allMarkdownRemark.nodes).slice(0, 6)
 

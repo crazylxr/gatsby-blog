@@ -1,10 +1,5 @@
 import moment from "moment"
-
-type Node = {
-  frontmatter: {
-    date: string
-  }
-}
+import { Node } from "../types/markdown"
 
 export function dateFormat(nodes: Node[]) {
   return nodes.map(node => {
