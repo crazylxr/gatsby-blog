@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import { dateFormat } from "../utils/formmat"
+import Layout from "../../components/layout"
+import { dateFormat } from "../../utils/formmat"
 
 export const color_meta = "#666"
 export const color_border = "#666"
